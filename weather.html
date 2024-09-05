@@ -1,0 +1,52 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.6.0/css/all.min.css">
+    <link rel="stylesheet" href="weather.css">
+</head>
+<body>
+    <div class="container">
+        <div class="header">
+            <div class="SearchBox">
+                <input type="text" placeholder="Enter Your location" class="input_Box">
+                <button id="searchbutton" class="fa-solid fa-magnifying-glass"></button>
+            </div>
+        </div>
+        <div class="location_not_exist">
+            <h2>Oops !!  location Not found...</h2>
+            <img src="page-not-found-error-404-system-updates-uploading-computing-operation-installation-programs-system-maintenance-a-hand-drawn-layout-template-of-a-broken-robot-illustration-vector.jpg" alt="#">
+        </div>
+        <div class="weather_Show">
+            <img src="light.jpg.webp" alt="#" class="weatherImage">
+            <div class="Weather_Box">
+                <p class="Temperature">10&degC</p>
+                <P class="Description">Light Rain</P>
+            </div>
+            <div class="Weather_Details">
+                <div class="Humidity">
+                    <i class="fa-sharp fa-solid fa-droplet"></i>
+                    <div class="Text">
+                        <span id="Humidity">50%</span>
+                        <p>Humidity</p>
+                    </div>
+
+                </div>
+                <div class="Wind">
+                    <i class="fa-sharp fa-solid fa-wind"></i>
+                    <div class="Text">
+                        <span id="Wind_Speed">80km/h</span>
+                        <p>Wind Speed</p>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </div>
+</body>
+<script src="./weather.js"></script>
+</html>
+<!-- ee9f7172f47a830210bac0f338189c06 -->
+<!-- https://api.openweathermap.org/data/2.5/weather?q={city name}&appid={API key} -->
+ 
